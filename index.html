@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>component library</title>
+    <link rel="stylesheet" href="index.css">
 
 </head>
+
 <body>
     <h1>Faisal's Component Library</h1>
     <p>I am attending neog.camp and I like to make a library 
@@ -22,68 +24,78 @@
 
     <h2>@Container :</h2>
     <h2>fluid conyainer:</h2>
-    <div>This is fluid container and it gose through the end of the page</div>
+    <div class="container 
+    container-fluid">This is fluid container and it gose through the end of the page</div>
     <h2>Centered conyainer:</h2>
-    <div>This is centered container and it gose through the end of the page</div>
+    <div class="container 
+    container-centered">This is centered container and it gose through the end of the page</div>
     
     <hr>
 
     <h2>@Links :</h2>
-    <a href="/">primary link</a>
-    <a href="/">secondary link </a>
+    <a class=" link link-primary"  href="/">primary link</a>
+    <a class=" link link-secondary" href="/">secondary link </a>
     <hr>
 
     <h2>@List :</h2>
     <h3>Unorderd list:</h3>
-    <ul>
+    <p>This list will not have bullets.</p>
+    <ul class="list-unordered" >
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
     </ul>
     <h3>Unordered inline list:</h3>
     <ul>
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
+         <li class="list-unordered-inline">Item one</li>
+         <li class="list-unordered-inline">Item two</li>
+         <li class="list-unordered-inline">Item three</li>
     </ul>
     <h3>Revers ordered list:</h3>
-    <ol>
+    <ol reversed>
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
     </ol>
     <hr>
     <h2>@Navigation :</h2>
-    <nav>
-        <div>Iamdeveloper</div>
-        <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/">PROJECTS</a></li>
-            <li><a href="/">ABOUT</a></li>
+    <nav class="navigation container">
+        <div class="nav-developer">iAmDeveloper</div>
+        <ul class="list-unordered nav-pill">
+            <li class="list-unordered-inline"><a class="link nav-home" href="/">HOME</a class="link" </li class="list-unordered-inlinenav-">
+            <li class="list-unordered-inline"><a class="link" href="/">PROJECTS</a class="link" </li class="list-unordered-inlinenav-">
+            <li class="list-unordered-inline"><a class="link" href="/">ABOUT</a></li>
         </ul>
     </nav>
     <hr>
     <h2>@HEADER :</h2>
-    <header>
-        <img src="images/header.svg"/>
-        <h3>The Heading in the Header</h3>
+    <header class="hero">
+        <img class="hero-image" src="images/headernew.svg"/>
+        <h1 class="hero-heading">The Heading in the  <span class="heading-inverted">header</span></h1>
     </header>
     <hr>
     <h2>@SECTION :</h2>
-    <section>
-        <h3>White section: </h3>
+    <section class="section" >
+        <div class="container-centered">
+        <h1>White section: </h1>
         <p>This will be in white back groung.</p>
-        <h3>Offwhite section: </h3>
-        <p>This will be in gray back groung.</p>
+        </div>
     </section>
+    <section class="section ow" >
+        <div class="container-centered">
+        <h1>Offwhite section: </h1>
+        <p>This will be in gray back groung.</p>
+        </div>
+    </section>
+    
     <hr>
     <h2>@FOOTER :</h2>
-    <footer>
-        <div>Smaller heading in footer.</div>
-        <ul>
-            <li>socialone</li>
-            <li>socialtwo</li>
-            <li>socialthree</li>
+    <footer class="footer">
+        <div class="footer-header">Smaller heading in footer.</div>
+        <ul class="list-unordered">
+            <li class="list-unordered-inline"><a class="link" href="/">socialone</a> </li>
+            <li class="list-unordered-inline"><a class="link" href="/">socialtwo</a></li>
+            <li class="list-unordered-inline"><a class="link" href="/">sociathree</a></li>
         </ul>
     </footer>
     <hr>
